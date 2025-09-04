@@ -12,13 +12,25 @@ export const personalInfo = {
 
 export const workExperience = [
   {
+    company: "Blubird Interactive Limited",
+    location: "Dhaka, Bangladesh",
+    position: "Software Engineer (Backend)",
+    period: "January 2023 - Present",
+    achievements: [
+      "Full Development and Support on Moving Manager Application.",
+      "Contributed to every projects of Blubird.",
+      "Completed many RnDs when needed.",
+      "Managed full team of Moving Manager.",
+    ],
+  },
+  {
     company: "BRAC IT Services Limited",
     location: "Dhaka, Bangladesh",
     position: "Software Engineer | Financial Services",
     period: "May 2021 - December 2022",
     achievements: [
-      "Worked on BRAC-Payroll (Ongoing).",
-      "Contributed to BRAC IT Official Website (Ongoing).",
+      "Worked on BRAC-Payroll.",
+      "Contributed to BRAC IT Official Website.",
       "Completed an agent banking module for BBL.",
       "Full development using Symfony Framework.",
       "Worked with many new tools from scratch.",
@@ -152,25 +164,36 @@ export const skills = {
 
 export const projects = [
   {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
+    title: "Moving Manager",
+    github: "https://github.com/kazi-shahin/mm",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+      "A comprehensive web application for managing moving and relocation services.",
+      "Includes customer management, job tracking, invoicing, and payments.",
+      "Built with Laravel and React for a seamless full-stack experience.",
+      "Implements advanced filtering, search, and reporting features.",
+      "Designed for scalability and real-world business use cases.",
     ],
   },
   {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
+    title: "IntoPocket",
+    github: "https://github.com/jasoumik/intopocket",
     description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "A personal finance management tool to track income, expenses, and savings.",
+      "Offers insights into financial habits with charts and summaries.",
+      "Developed using Laravel + React with Sanctum authentication.",
+      "Responsive design with Tailwind CSS and modern UI components.",
+      "Deployed and accessible at https://intopocket.intovah.com/.",
+    ],
+  },
+  {
+    title: "IntoStock",
+    github: "https://github.com/jasoumik/intostock",
+    description: [
+      "An inventory management system for businesses to manage stock and products.",
+      "Supports categories, product listings, and invoice management.",
+      "Built with Laravel and React for robust backend and dynamic frontend.",
+      "Implements role-based access and secure authentication.",
+      "Lightweight, scalable, and optimized for small-to-medium businesses.",
     ],
   },
 ];
