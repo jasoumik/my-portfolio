@@ -1,0 +1,102 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { personalInfo } from "@/lib/data";
+---
+
+<Layout
+  title="M/S J.A.S Trading — Business Verification"
+  description="Official business page for M/S J.A.S Trading, sole proprietorship owned by Jarif Ahmed Soumik."
+>
+  <main class="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-20">
+    <section
+      class="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur-md sm:p-12"
+    >
+      <p class="text-sm font-medium uppercase tracking-widest text-purple-400">
+        Business Verification
+      </p>
+      <h1 class="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
+        M/S J.A.S Trading
+      </h1>
+      <p class="mt-2 text-base text-muted-foreground">
+        Sole Proprietorship Concern
+      </p>
+
+      <div class="my-8 h-px w-full bg-white/10"></div>
+
+      <p class="text-lg leading-relaxed text-foreground">
+        This is to certify that
+        <span class="font-semibold">{personalInfo.name}</span>
+        is the sole
+        <span class="font-semibold">Proprietor</span>
+        of <span class="font-semibold">M/S J.A.S Trading</span>, a legally
+        operating sole proprietorship business. The proprietor is fully
+        authorized to represent, manage, and act on behalf of the business in
+        all official and commercial matters, including its presence on social
+        media platforms such as Facebook.
+      </p>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Business Name
+          </p>
+          <p class="mt-1 text-foreground">M/S J.A.S Trading</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Proprietor
+          </p>
+          <p class="mt-1 text-foreground">{personalInfo.name}</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Business Type
+          </p>
+          <p class="mt-1 text-foreground">Sole Proprietorship</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Location
+          </p>
+          <p class="mt-1 text-foreground">{personalInfo.location}</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Contact Email
+          </p>
+          <a
+            href={`mailto:${personalInfo.email}`}
+            class="mt-1 block text-purple-400 hover:underline"
+          >
+            {personalInfo.email}
+          </a>
+        </div>
+        <div>
+          <p class="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Contact Phone
+          </p>
+          <a
+            href={`tel:${personalInfo.phone}`}
+            class="mt-1 block text-purple-400 hover:underline"
+          >
+            {personalInfo.phone}
+          </a>
+        </div>
+      </div>
+
+      <div class="my-8 h-px w-full bg-white/10"></div>
+
+      <p class="text-sm text-muted-foreground">
+        For any verification enquiries regarding M/S J.A.S Trading, please
+        contact the proprietor using the details above.
+      </p>
+
+      <a
+        href="/"
+        class="mt-8 inline-block text-sm text-purple-400 hover:underline"
+      >
+        ← Back to portfolio
+      </a>
+    </section>
+  </main>
+</Layout>
